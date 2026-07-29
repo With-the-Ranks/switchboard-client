@@ -32,6 +32,7 @@ interface SendMessageInput {
   mediaUrls?: string[];
   contactZipCode?: string;
   sendBefore: string;
+  sendAfter?: string;
 }
 
 export interface SendingLocation {
