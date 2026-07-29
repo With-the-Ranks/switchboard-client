@@ -49,8 +49,8 @@ export const DELETE_SENDING_LOCATION = `
 
 export const SEND_MESSAGE = `
   mutation sendMessage($profileId: UUID!, $to: PhoneNumber!, $body: String!,
-                       $contactZipCode: ZipCode, $mediaUrls: [Url], $sendBefore: Datetime!) {
-    sendMessage(input: {profileId: $profileId, to: $to, body: $body, contactZipCode: $contactZipCode, mediaUrls: $mediaUrls, sendBefore: $sendBefore}) {
+                       $contactZipCode: ZipCode, $mediaUrls: [Url], $sendBefore: Datetime!, $sendAfter: Datetime) {
+    sendMessage(input: {profileId: $profileId, to: $to, body: $body, contactZipCode: $contactZipCode, mediaUrls: $mediaUrls, sendBefore: $sendBefore, sendAfter: $sendAfter}) {
       outboundMessage {
         id
       }
